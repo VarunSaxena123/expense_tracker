@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# 🧾 Expense Tracker App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack expense tracker application built with **FastAPI** on the backend and **React** on the frontend.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📁 Project Structure
 
-### `npm start`
+expense-tracker/
+├── expense_tracker_backend/ # FastAPI backend
+├── frontend/ # React frontend
+└── README.md # This file
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+yaml
+Copy
+Edit
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Clone the Repository
 
-### `npm run build`
+```bash
+git clone https://github.com/yourusername/expense-tracker.git
+cd expense-tracker
+⚙️ Backend Setup (FastAPI)
+📂 Navigate to Backend
+bash
+Copy
+Edit
+cd expense_tracker_backend
+📦 Install Requirements
+Create a virtual environment (recommended):
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copy
+Edit
+python -m venv venv
+# On macOS/Linux:
+source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
+Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+Copy
+Edit
+pip install -r requirements.txt
+▶️ Run the Server
+bash
+Copy
+Edit
+uvicorn main:app --reload
+The backend will be available at: http://127.0.0.1:8000
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+📚 API Docs
+Swagger UI: http://127.0.0.1:8000/docs
 
-### `npm run eject`
+ReDoc: http://127.0.0.1:8000/redoc
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🌐 Frontend Setup (React)
+📂 Navigate to Frontend
+bash
+Copy
+Edit
+cd ../frontend
+📦 Install Dependencies
+bash
+Copy
+Edit
+npm install
+▶️ Run the React App
+bash
+Copy
+Edit
+npm start
+The frontend will be available at: http://localhost:3000
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
