@@ -50,3 +50,7 @@ def get_expenses(session: Session = Depends(get_session)):
 @app.get("/expenses/user/{user_id}", response_model=List[Expense])
 def get_expenses_by_user(user_id: int, session: Session = Depends(get_session)):
     return session.exec(select(Expense).where(Expense.user_id == user_id)).all()
+
+@app.get("/")
+async def root():
+    return {"message": "Hello from Vercel!"}
