@@ -1,4 +1,3 @@
-// ExpenseForm.js
 import React, { useState } from 'react';
 import api from '../api';
 
@@ -20,7 +19,6 @@ export default function ExpenseForm() {
         user_id: parseInt(userId),
       });
 
-      // Clear form
       setTitle('');
       setAmount('');
       setDate('');
